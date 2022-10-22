@@ -17,7 +17,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-        <small>Please enter 1 for Male and 2 for Female:</small>
+        <p>Please enter 1 for Male and 2 for Female:</p>
     	<input type="text" name="Gender" placeholder="Gender" required="required" />
         <input type="text" name="Age" placeholder="Age" required="required" />
 		<button type="submit" class="btn btn-primary btn-block btn-large">Predict the Risk Profile</button>
@@ -25,7 +25,7 @@
 
    <br>
    <br>
-   <small>If Risk Profile values is 0 ,it means low risk and 1 means high risk.</small>
+   <p>If Risk Profile values is 0 ,it means low risk and 1 means high risk.</p>
    <br>
    {{ prediction_text }}
     
